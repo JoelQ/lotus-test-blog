@@ -9,7 +9,7 @@ require 'repositories/post_repository'
 require 'models/post'
 
 class App
-  CONNECTION_URL = 'postgres://localhost:5432/blog'
+  CONNECTION_URL = ENV['DATABASE_URL'] || 'postgres://localhost:5432/blog'
 
   attr_reader :router
 
