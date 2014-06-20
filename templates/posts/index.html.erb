@@ -1,0 +1,5 @@
+<h1>My Blog</h1>
+
+<% posts.each do |post| %>
+  <a href="/posts/<%= post.id %>"><%= post.name %></a>
+<% end %>
